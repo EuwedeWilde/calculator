@@ -37,7 +37,7 @@ function displayOperator(operator) {
     console.log(inputs);
   } else {
     inputs.push(parseInt(output.innerText));
-    output.innerText = calculate(inputs);
+    output.innerText = Math.round(calculate(inputs));
     inputs = [];
   }
 }
