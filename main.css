@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calc-body {
+  height: 100vh;
+  width: 66.67vh;
+  margin: auto;
+  align-items: center;
+  display: grid;
+  border: 2px solid #333;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "output output output output"
+    "clear  clear  back   divide"
+    "seven  eight  nine   times"
+    "four   five   six    minus"
+    "one    two    three  plus"
+    "zero   zero   zero   equal";
+}
+
+.calc-output,
+.calc-input,
+.calc-calculate {
+  height: 100%;
+  width: 100%;
+  font-family: monospace;
+  font-size: 3rem;
+  border: 2px solid #333;
+}
+
+.calc-output {
+  grid-area: output;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+
+.calc-input {
+  background-color: #ddd;
+  color: #333;
+  text-align: center;
+}
+
+.calc-input:hover {
+  background-color: #eee;
+}
+
+.calc-input:active {
+  background-color: #ccc;
+}
+
+.calc-calculate {
+  background-color: #f09d09;
+  color: #333;
+  text-align: center;
+}
+
+.calc-calculate:hover {
+  background-color: #f2b866;
+}
+
+.calc-calculate:active {
+  background-color: #e08e00;
+}
+
+.calc-0 {
+  grid-area: zero;
+}
+
+.calc-1 {
+  grid-area: one;
+}
+
+.calc-2 {
+  grid-area: two;
+}
+
+.calc-3 {
+  grid-area: three;
+}
+
+.calc-4 {
+  grid-area: four;
+}
+
+.calc-5 {
+  grid-area: five;
+}
+
+.calc-6 {
+  grid-area: six;
+}
+
+.calc-7 {
+  grid-area: seven;
+}
+
+.calc-8 {
+  grid-area: eight;
+}
+
+.calc-9 {
+  grid-area: nine;
+}
+
+.calc-clear {
+  grid-area: clear;
+}
+
+.calc-back {
+  grid-area: back;
+}
+
+.calc-divide {
+  grid-area: divide;
+}
+
+.calc-times {
+  grid-area: times;
+}
+
+.calc-minus {
+  grid-area: minus;
+}
+
+.calc-plus {
+  grid-area: plus;
+}
+
+.calc-equals {
+  grid-area: equal;
+}
